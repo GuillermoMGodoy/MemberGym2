@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pagos y Miembros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="payments-button">Ver estado de miembros</a>
+        <h1>Registro de Pagos</h1>
+        <form id="payment-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="amount">Cantidad de dinero:</label>
+            <input type="number" id="amount" required>
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" required>
+            <button type="submit">Registrar Pago</button>
+        </form>
+        <div class="payments-list" id="payments-list">
+            <!-- Aquí se mostrarán los pagos registrados -->
+        </div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>

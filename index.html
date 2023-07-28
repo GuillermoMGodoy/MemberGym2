@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Membresías de Gimnasio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <label for="search">Buscar por nombre:</label>
+    <input type="text" id="search" oninput="filterMembers()">
+    <h1>Kloster´s Gym</h1>
+    <form id="membership-form">
+      <a href="payments.html" class="payments-button">Ver Pagos Registrados</a>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      <button type="submit">Agregar Miembro</button>
+    </form>
+    <div class="members-container" id="members-list">
+      <!-- Aquí se mostrarán los miembros agregados -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    color: #000;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #members-list,
+  .payments-list {
+    margin-top: 20px;
+  }
+  
+  .member,
+  .payment {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .member span,
+  .payment span {
+    flex: 1;
+  }
+  
+  .delete-button {
+    color: red;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .delete-button:hover {
+    color: #a80000;
+  }
+  
+  .active {
+    background-color: #1aff1a;
+    color: #005600;
+  }
+  
+  .expired {
+    background-color: #ff6666;
+    color: #8f0000;
+  }
+  
+  /* Estilo para el campo de búsqueda */
+  #search {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  /* Ocultar miembros que no coinciden con la búsqueda */
+  .members-container .member {
+    display: block;
+  }
+/* Estilos para el contenedor de los pagos */
+.payments-list {
+    display: flex;
+    flex-wrap: wrap; /* Los pagos se ajustarán automáticamente a la siguiente línea si no hay suficiente espacio horizontal */
+  }
+  
+  /* Estilos para cada elemento de pago */
+  .payment-entry {
+    border: 1px solid blue; /* Agregamos un borde de color azul */
+    padding: 10px;
+    margin: 5px;
+    flex: 0 0 calc(30% - 20px);
+  }
